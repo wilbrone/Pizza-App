@@ -20,66 +20,91 @@
         </div>
 
         <!-- start of the form section -->
-        <section class="section2 row">
-            <img src="assets/tree.webp" width="50%">
+        <section class="container-fluid row" id="section2">
+            <img src="assets/tree.webp" width="50%" style="">
             <div class="inner-sec">
-                <form action="" method="" accept-charset="utf-8">
-                    <!-- Field for size selection -->
-                    <div class="input-group mb-3" style="width: 40%;">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Size</label>
+                <fieldset>
+                    <legend style="width: 40%; margin-left: 50px;">Make Your Order Here...</legend>
+                    <form action="" method="" accept-charset="utf-8">
+                        <!-- Field for size selection -->
+                        <div class="input-group mb-3" style="width: 50%;">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Size</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01" required>
+                                <option selected>Choose...</option>
+                                <option value="1">Small</option>
+                                <option value="2">Medium</option>
+                                <option value="3">Large</option>
+                            </select>
                         </div>
-                        <select class="custom-select" id="inputGroupSelect01" required>
-                            <option selected>Choose...</option>
-                            <option value="1">Small</option>
-                            <option value="2">Medium</option>
-                            <option value="3">Large</option>
-                        </select>
-                    </div>
 
-                    <!-- fields for crusts -->
-                    <div class="input-group mb-3" style="width: 40%;">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Crust</label>
+                        <!-- fields for crusts -->
+                        <div class="input-group mb-3" style="width: 50%;">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Crust</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01" required>
+                                <option selected>Thin, Thick or Custom Crusts...</option>
+                                <option value="1" disabled>Thin Crusts:</option>
+                                <option value="2">New Haven Style</option>
+                                <option value="3">St. Louis Style</option>
+                                <option value="3">Neapolitan</option>
+                                <option value="3">New York Style</option>
+                                <option value="3" disabled>Thick Crusts:</option>
+                                <option value="3">Double/Stuffed-Crust Style</option>
+                                <option value="3">Detroit/Sicilian Style</option>
+                                <option value="3">Chicago Deep-Fish</option>
+                                <option value="3">Flat Bread/Focaccia</option>
+                                <option value="3" disabled>Custom Crusts:</option>
+                                <option value="3">Glutten-Free</option>
+                                <option value="3">Vegan-Friendly</option>
+                            </select>
                         </div>
-                        <select class="custom-select" id="inputGroupSelect01" required>
-                            <option selected>Thin, Thick or Custom Crusts...</option>
-                            <option value="1" disabled>Thin Crusts</option>
-                            <option value="2">New Haven Style</option>
-                            <option value="3">St. Louis Style</option>
-                            <option value="3">Neapolitan</option>
-                            <option value="3">New York Style</option>
-                            <option value="3" disabled>Thick Crusts</option>
-                            <option value="3">Double/Stuffed-Crust Style</option>
-                            <option value="3">Detroit/Sicilian Style</option>
-                            <option value="3">Chicago Deep-Fish</option>
-                            <option value="3">Flat Bread/Focaccia</option>
-                            <option value="3" disabled>Custom Crusts</option>
-                            <option value="3">Glutten-Free</option>
-                            <option value="3">Vegan-Friendly</option>
-                        </select>
-                    </div>
 
-                    <!-- fields for Toppings -->
-                    <div class="input-group mb-3" style="width: 40%;">
-                        <div class="input-group-prepend">
-                            <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Toppings</label>
+                        <!-- fields for Toppings -->
+                        <div class="input-group mb-3" style="width: 50%;">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Toppings</label>
+                            </div>
+                            <select class="custom-select" id="inputGroupSelect01" required>
+                                <option selected>Toppings...</option>
+                                <option value="1">Pepperoni</option>
+                                <option value="2">Mushroooms</option>
+                                <option value="3">Onions</option>
+                                <option value="3">Sausage</option>
+                                <option value="3">Bacon</option>
+                                <option value="3">Extra Cheese</option>
+                                <option value="3">Black Olives</option>
+                                <option value="3">Green Pepper</option>
+                                <option value="3">Pineapple</option>
+                                <option value="3">Spinach</option>
+                            </select>
                         </div>
-                        <select class="custom-select" id="inputGroupSelect01" required>
-                            <option selected>Toppings...</option>
-                            <option value="1">Pepperoni</option>
-                            <option value="2">Mushroooms</option>
-                            <option value="3">Onions</option>
-                            <option value="3">Sausage</option>
-                            <option value="3">Bacon</option>
-                            <option value="3">Extra Cheese</option>
-                            <option value="3">Black Olives</option>
-                            <option value="3">Green Pepper</option>
-                            <option value="3">Pineapple</option>
-                            <option value="3">Spinach</option>
-                        </select>
-                    </div>
-                </form>
+
+                        <!-- Button for the address form -->
+                        <button type="button" class="btn btn-primary btn-lg btn-block" style="background-color: #8a6247; border: none; margin-top: 40px;">I would like a Delivery</button>
+                        <!-- Input fields for address -->
+                        <div class="row" id="address">
+                            <div class="form-group">
+                                <label for="estate"><strong>Estate</strong></label>
+                                <input type="text" class="form-control" id="estate" aria-describedby="" placeholder="Enter Street Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="streetName"><strong>Street</strong></label>
+                                <input type="text" class="form-control" id="streetName" aria-describedby="" placeholder="Enter Street Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="apartment"><strong>Apartmant/Building</strong></label>
+                                <input type="text" class="form-control" id="apartment" aria-describedby="" placeholder="Enter Apartmant/Building Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="floor"><strong>Floor/Door No.</strong></label>
+                                <input type="text" class="form-control" id="floor" aria-describedby="" placeholder="Enter Apartmant/Building Name">
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
             </div>
         </section>
 
