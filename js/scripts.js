@@ -1,4 +1,4 @@
-var 
+
 
 
 $("#orders").click(function(){
@@ -13,8 +13,13 @@ $("form#new-order").submit(function(event) {
     var phoneNo = $("input#phone").val();
     console.log(phoneNo);
 
-    var topping = $("select#inputGroupSelect03").val();
-    console.log(topping);
+    var toppings = [];
+    $.each($("input[name='topping']:checked"), function(){
+        toppings.push($(this).val());
+    });
+    console.log(toppings);
+
+    // var topping = $('input[name=topping]').val();
     var crust = $("select#inputGroupSelect02").val();
     console.log(crust);
     var size = $("select#inputGroupSelect01").val();
