@@ -20,20 +20,67 @@
         </div>
 
         <!-- start of the form section -->
-        <section class="section2">
-            <form action="" method="" accept-charset="utf-8">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="inputGroupSelect01">Select Size</label>
+        <section class="section2 row">
+            <img src="assets/tree.webp" width="50%">
+            <div class="inner-sec">
+                <form action="" method="" accept-charset="utf-8">
+                    <!-- Field for size selection -->
+                    <div class="input-group mb-3" style="width: 40%;">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Size</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01" required>
+                            <option selected>Choose...</option>
+                            <option value="1">Small</option>
+                            <option value="2">Medium</option>
+                            <option value="3">Large</option>
+                        </select>
                     </div>
-                    <select class="custom-select" id="inputGroupSelect01">
-                        <option selected>Choose...</option>
-                        <option value="1">Small</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Larg</option>
-                    </select>
-                </div>
-            </form>
+
+                    <!-- fields for crusts -->
+                    <div class="input-group mb-3" style="width: 40%;">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Crust</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01" required>
+                            <option selected>Thin, Thick or Custom Crusts...</option>
+                            <option value="1" disabled>Thin Crusts</option>
+                            <option value="2">New Haven Style</option>
+                            <option value="3">St. Louis Style</option>
+                            <option value="3">Neapolitan</option>
+                            <option value="3">New York Style</option>
+                            <option value="3" disabled>Thick Crusts</option>
+                            <option value="3">Double/Stuffed-Crust Style</option>
+                            <option value="3">Detroit/Sicilian Style</option>
+                            <option value="3">Chicago Deep-Fish</option>
+                            <option value="3">Flat Bread/Focaccia</option>
+                            <option value="3" disabled>Custom Crusts</option>
+                            <option value="3">Glutten-Free</option>
+                            <option value="3">Vegan-Friendly</option>
+                        </select>
+                    </div>
+
+                    <!-- fields for Toppings -->
+                    <div class="input-group mb-3" style="width: 40%;">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Toppings</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01" required>
+                            <option selected>Toppings...</option>
+                            <option value="1">Pepperoni</option>
+                            <option value="2">Mushroooms</option>
+                            <option value="3">Onions</option>
+                            <option value="3">Sausage</option>
+                            <option value="3">Bacon</option>
+                            <option value="3">Extra Cheese</option>
+                            <option value="3">Black Olives</option>
+                            <option value="3">Green Pepper</option>
+                            <option value="3">Pineapple</option>
+                            <option value="3">Spinach</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
         </section>
 
         <!-- JS & JQUERY LINKS -->
