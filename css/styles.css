@@ -43,7 +43,7 @@
     margin: 0 auto;
 }
 .inner-sec{
-    margin-top: 45px;
+    margin-top: 05px;
     width: 50%;
 }
 fieldset{
@@ -53,7 +53,6 @@ fieldset{
 }
 form{
     margin:10px 40px;
-
 }
 input{
     border: solid black 1px !important;
@@ -61,6 +60,22 @@ input{
     color: black !important;
     font-weight: bold !important;
 }
+#person{
+    justify-content: space-between;
+    width: 80%;     
+    margin-left: 05px;
+}
 #address{
     justify-content: space-around;
+}
+#sub{
+    float: right;
+    background-color: #6f6464;
+    border: none;
+    margin-left: 10px;
+}
+#addorder{
+    float: right;
+    background-color: #6f6464;
+    border: none;
 }
