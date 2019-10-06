@@ -25,67 +25,68 @@
             <div class="inner-sec">
                 <fieldset>
                     <legend style="width: 40%; margin-left: 50px;">Make Your Order Here...</legend>
-                    <form action="" method="" accept-charset="utf-8">
+                    <!-- START OF FORM -->
+                    <form id="new-order" action="" method="" accept-charset="utf-8">
                         <!-- Field for size selection -->
                         <div class="input-group mb-3" style="width: 50%;">
                             <div class="input-group-prepend">
                                 <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Size</label>
                             </div>
                             <select class="custom-select" id="inputGroupSelect01" required>
-                                <option selected>Choose...</option>
-                                <option value="1">Small</option>
-                                <option value="2">Medium</option>
-                                <option value="3">Large</option>
+                                <option selected>Choose Size...</option>
+                                <option value="1">Small @ Ksh.500</option>
+                                <option value="2">Medium @ Ksh.700</option>
+                                <option value="3">Large @ Ksh.1000</option>
                             </select>
                         </div>
 
                         <!-- fields for crusts -->
                         <div class="input-group mb-3" style="width: 50%;">
                             <div class="input-group-prepend">
-                                <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Crust</label>
+                                <label class="input-group-text" for="inputGroupSelect02" style="background-color: #6d391e; color: white;">Choose Crust</label>
                             </div>
-                            <select class="custom-select" id="inputGroupSelect01" required>
+                            <select class="custom-select" id="inputGroupSelect02" required>
                                 <option selected>Thin, Thick or Custom Crusts...</option>
-                                <option value="1" disabled>Thin Crusts:</option>
-                                <option value="2">New Haven Style</option>
-                                <option value="3">St. Louis Style</option>
-                                <option value="3">Neapolitan</option>
-                                <option value="3">New York Style</option>
-                                <option value="3" disabled>Thick Crusts:</option>
-                                <option value="3">Double/Stuffed-Crust Style</option>
-                                <option value="3">Detroit/Sicilian Style</option>
-                                <option value="3">Chicago Deep-Fish</option>
-                                <option value="3">Flat Bread/Focaccia</option>
-                                <option value="3" disabled>Custom Crusts:</option>
-                                <option value="3">Glutten-Free</option>
-                                <option value="3">Vegan-Friendly</option>
+                                <option value="1" disabled>Thin Crusts...:</option>
+                                <option value="2">New Haven Style @ Ksh.100</option>
+                                <option value="3">St. Louis Style @ Ksh.100</option>
+                                <option value="4">Neapolitan @ Ksh.100</option>
+                                <option value="5">New York Style @ Ksh.100</option>
+                                <option value="6" disabled>Thick Crusts...:</option>
+                                <option value="7">Double/Stuffed-Crust Style @ Ksh.100</option>
+                                <option value="8">Detroit/Sicilian Style @ Ksh.100</option>
+                                <option value="9">Chicago Deep-Fish @ Ksh.100</option>
+                                <option value="10">Flat Bread/Focaccia @ Ksh.100</option>
+                                <option value="11" disabled>Custom Crusts...:</option>
+                                <option value="12">Glutten-Free @ Ksh.100</option>
+                                <option value="13">Vegan-Friendly @ Ksh.100</option>
                             </select>
                         </div>
 
                         <!-- fields for Toppings -->
                         <div class="input-group mb-3" style="width: 50%;">
                             <div class="input-group-prepend">
-                                <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Toppings</label>
+                                <label class="input-group-text" for="inputGroupSelect03" style="background-color: #6d391e; color: white;">Choose Toppings</label>
                             </div>
-                            <select class="custom-select" id="inputGroupSelect01" required>
+                            <select class="custom-select" id="inputGroupSelect03" required>
                                 <option selected>Toppings...</option>
-                                <option value="1">Pepperoni</option>
-                                <option value="2">Mushroooms</option>
-                                <option value="3">Onions</option>
-                                <option value="3">Sausage</option>
-                                <option value="3">Bacon</option>
-                                <option value="3">Extra Cheese</option>
-                                <option value="3">Black Olives</option>
-                                <option value="3">Green Pepper</option>
-                                <option value="3">Pineapple</option>
-                                <option value="3">Spinach</option>
+                                <option value="1">Pepperoni @ Ksh.100</option>
+                                <option value="2">Mushroooms @ Ksh.100</option>
+                                <option value="3">Onions @ Ksh.100</option>
+                                <option value="4">Sausage @ Ksh.100</option>
+                                <option value="5">Bacon @ Ksh.100</option>
+                                <option value="6">Extra Cheese @ Ksh.100</option>
+                                <option value="7">Black Olives @ Ksh.100</option>
+                                <option value="8">Green Pepper @ Ksh.100</option>
+                                <option value="9">Pineapple @ Ksh.100</option>
+                                <option value="10">Spinach @ Ksh.100</option>
                             </select>
                         </div>
                         <!--  -->
                         <div class="row" id="person">
                             <div class="form-group">
                                 <label for="name"><strong>Name</strong></label>
-                                <input type="text" class="form-control" id="name" aria-describedby="" placeholder="Enter Your Name">
+                                <input type="text" class="form-control" id="name" aria-describedby="" placeholder="Enter Your Name" required>
                             </div>
                             <div class="form-group">
                                 <label for="phone"><strong>Phone No.</strong></label>
@@ -94,27 +95,29 @@
                         </div>
 
                         <!-- Button for the address form -->
-                        <button type="button" class="btn btn-primary btn-lg btn-block" style="background-color: #8a6247; border: none; margin-top: 10px;">I would like a Delivery</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="orders" style="background-color: #8a6247; border: none; margin-top: 10px;">I would like a Delivery</button>
                         <!-- Input fields for address -->
-                        <div class="row" id="address">
-                            <div class="form-group">
-                                <label for="estate"><strong>Estate</strong></label>
-                                <input type="text" class="form-control" id="estate" aria-describedby="" placeholder="Enter Street Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="streetName"><strong>Street</strong></label>
-                                <input type="text" class="form-control" id="streetName" aria-describedby="" placeholder="Enter Street Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="apartment"><strong>Apartmant/Building</strong></label>
-                                <input type="text" class="form-control" id="apartment" aria-describedby="" placeholder="Enter Apartmant/Building Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="floor"><strong>Floor/Door No.</strong></label>
-                                <input type="text" class="form-control" id="floor" aria-describedby="" placeholder="Enter Apartmant/Building Name">
+                        <div class="addr">
+                            <div class="row" id="address">
+                                <div class="form-group">
+                                    <label for="estate"><strong>Estate</strong></label>
+                                    <input type="text" class="form-control" id="estate" aria-describedby="" placeholder="Enter Street Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="streetName"><strong>Street</strong></label>
+                                    <input type="text" class="form-control" id="streetName" aria-describedby="" placeholder="Enter Street Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="apartment"><strong>Apartmant/Building</strong></label>
+                                    <input type="text" class="form-control" id="apartment" aria-describedby="" placeholder="Enter Apartmant/Building Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="floor"><strong>Floor/Door No.</strong></label>
+                                    <input type="text" class="form-control" id="floor" aria-describedby="" placeholder="Enter Apartmant/Building Name">
+                                </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-danger" id="sub">SUBMIT</button>
+                        <button type="submit" class="btn btn-danger" id="sub">SUBMIT</button>
                         <button type="button" class="btn btn-danger" id="addorder">ADD ORDER</button>
                     </form>
                 </fieldset>
