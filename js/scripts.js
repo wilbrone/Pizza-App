@@ -23,6 +23,7 @@ $("#orders").click(function(){
     $(".addrss").show();
 });
 
+// form submission event
 $("form#new-order").submit(function(event) {
     event.preventDefault();
 
