@@ -18,7 +18,9 @@ function Address(street,estate,apartment,floor){
 };
 
 $("#orders").click(function(){
+    alert("Our Delivery fee is KSh.200");
     $(".addr").show();
+    $(".addrss").show();
 });
 
 $("form#new-order").submit(function(event) {
@@ -110,6 +112,10 @@ function billCalculation(newOrder){
 
     var price = sizePrice + crustPrice + toppingPrice + deliveryTag;
     console.log(price);
+
+    // total
+    $("#total").text(price);
+
 }
 
 

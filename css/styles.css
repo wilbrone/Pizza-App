@@ -87,3 +87,9 @@ input{
 .cntct{
     justify-content: space-around; 
 }
+.addrss{
+    display: none;
+}
+.totals{
+    text-align: center;
+}
