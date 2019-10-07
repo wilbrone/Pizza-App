@@ -1,11 +1,21 @@
-function Order(name,phone,size,crust,toppings ){
+// constructor for the order
+function Order(name,phone,size,crust,toppings){
     this.Name = name;
     this.Phone = phone;
     this.Size = size;
     this.Crust = crust;
     this.Toppings = toppings;
-}
+    this.Addresses = [];
 
+};
+
+// constructor for the address
+function Address(street,estate,apartment,floor){
+    this.Street = street;
+    this.Estate = estate;
+    this.Apartmant = apartment;
+    this.Floor = floor;
+};
 
 $("#orders").click(function(){
     $(".addr").show();
@@ -36,13 +46,26 @@ $("form#new-order").submit(function(event) {
     var newOrder = new Order(name,phoneNo,size,crust,top);
     console.log(newOrder);
 
+
+    // structure for the constructor ***Address(street,estate,apartment,floor)***
+    // creating the object for the address given for delivery
+    var newAddress = new Address(street,estate,apartment,floor);
+    console.log(newAddress);
+    newOrder.Addresses.push(newAddress);
+
+
     billCalculation(newOrder);
 
+    displayData(newOrder);
 
+    // putting the orders into an array
+    var totalOrders = [];
+    totalOrders.push(newOrder);
+    console.log(totalOrders);
 
 
     // this is for emptying the fields after clicking submit
-    resetFields();
+    // resetFields();
 
 });
 
@@ -67,11 +90,52 @@ function billCalculation(newOrder){
   
         toppingPrice += unitPrice;
     }
-    console.log(toppingPrice);
+    
+    function deliveryFee(){
+        var delivery = newOrder.Addresses;
+        var deliveryPrice;
 
-    var price = sizePrice + crustPrice + toppingPrice;
+        if(delivery.length = 1){
+            deliveryPrice = 200;
+            return deliveryPrice;
+        }else{
+            deliveryPrice = 0;
+            return deliveryPrice;
+        };
+    }
+
+    var deliveryTag = deliveryFee();
+    console.log(deliveryTag);
+
+    var price = sizePrice + crustPrice + toppingPrice + deliveryTag;
     console.log(price);
 }
+
+
+
+// Structure of th constructor ***Order(name,phone,size,crust,toppings )***
+// function for displaying  data
+function displayData(newOrder){
+    var name = newOrder.Name;
+    var phne = newOrder.Phone;
+
+    var sze = newOrder.Size.split(", ")[0];
+    var szePrc = newOrder.Size.split(", ")[1];
+
+    var crst = newOrder.Crust.split(", ")[0];
+    var crstPrc = newOrder.Crust.split(", ")[1];
+
+    var toppngs;
+    var toppngsPrc;
+
+    var tops = newOrder.Toppings;
+    tops.forEach(function(topps) {
+       
+        toppngs = topps.split(", ")[0];
+        toppngsPrc = topps.split(", ")[1]; 
+    });
+}
+
 
 // for emptying the fields
 function resetFields(){
