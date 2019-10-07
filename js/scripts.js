@@ -93,13 +93,14 @@ function billCalculation(newOrder){
     
     function deliveryFee(){
         var delivery = newOrder.Addresses;
+        console.log(delivery);
         var deliveryPrice;
 
-        if(delivery.length = 1){
-            deliveryPrice = 200;
+        if(delivery[0].Estate==null || delivery[0].Estate=="" && delivery[0].Street==null || delivery[0].Street=="" && delivery[0].Apartmant==null || delivery[0].Apartmant=="" && delivery[0].Floor==null || delivery[0].Floor==""){
+            deliveryPrice = 0;
             return deliveryPrice;
         }else{
-            deliveryPrice = 0;
+            deliveryPrice = 200;
             return deliveryPrice;
         };
     }
@@ -143,8 +144,13 @@ function displayData(newOrder){
     $("#new-size").text(sze + " @KSh." + szePrc);
     $("#new-crust").text(crst + " @KSh." + crstPrc);
 
+    // printing the address
+    var ad = newOrder.Addresses;
+    $("#new-estate").text(ad[0].Estate);
+    $("#new-street").text(ad[0].Street);
+    $("#new-building").text(ad[0].Apartmant);
+    $("#new-floor").text(ad[0].Floor);
 
-    
 }
 
 
