@@ -93,3 +93,15 @@ input{
 .totals{
     text-align: center;
 }
+.grand{
+    position: absolute;
+    /* border: solid; */
+    width: 50%;
+    min-height: 60%; 
+    top: 197%;
+    left: 26%;
+    background-color: #dde3da;
+}
+.last{
+    display: none;
+}
