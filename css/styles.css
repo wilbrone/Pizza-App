@@ -84,3 +84,6 @@ input{
     border: none;
     margin-top: 15px;
 }
+.cntct{
+    justify-content: space-around; 
+}

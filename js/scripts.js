@@ -65,7 +65,7 @@ $("form#new-order").submit(function(event) {
 
 
     // this is for emptying the fields after clicking submit
-    // resetFields();
+    resetFields();
 
 });
 
@@ -133,7 +133,18 @@ function displayData(newOrder){
        
         toppngs = topps.split(", ")[0];
         toppngsPrc = topps.split(", ")[1]; 
+        // displaying the list of arrays
+        $("ul#new-topping").append("<li><span class=''>" + toppngs + " " + " @KSh." + toppngsPrc + "</span></li>");
     });
+
+    // print outs
+    $("#new-name").text(name);
+    $("#new-phone").text(phne);
+    $("#new-size").text(sze + " @KSh." + szePrc);
+    $("#new-crust").text(crst + " @KSh." + crstPrc);
+
+
+    
 }
 
 
