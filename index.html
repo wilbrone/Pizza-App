@@ -33,7 +33,7 @@
                                 <label class="input-group-text" for="inputGroupSelect01" style="background-color: #6d391e; color: white;">Choose Size</label>
                             </div>
                             <select class="custom-select" id="inputGroupSelect01" required>
-                                <option selected>Choose Size...</option>
+                                <option muted>Choose Size...</option>
                                 <option value="Small, 500">Small @ Ksh.500</option>
                                 <option value="Medium, 700">Medium @ Ksh.700</option>
                                 <option value="Large, 1000">Large @ Ksh.1000</option>
@@ -46,39 +46,111 @@
                                 <label class="input-group-text" for="inputGroupSelect02" style="background-color: #6d391e; color: white;">Choose Crust</label>
                             </div>
                             <select class="custom-select" id="inputGroupSelect02" required>
-                                <option selected>Thin, Thick or Custom Crusts...</option>
-                                <option value="1" disabled>Thin Crusts...:</option>
-                                <option value="New Haven Style, 100">New Haven Style @ Ksh.100</option>
-                                <option value="St. Louis Style, 100">St. Louis Style @ Ksh.100</option>
-                                <option value="Neapolitan, 100">Neapolitan @ Ksh.100</option>
-                                <option value="New York Style, 100">New York Style @ Ksh.100</option>
-                                <option value="6" disabled>Thick Crusts...:</option>
-                                <option value="Double/Stuffed-Crust Style, 100">Double/Stuffed-Crust Style @ Ksh.100</option>
-                                <option value="Detroit/Sicilian Style, 100">Detroit/Sicilian Style @ Ksh.100</option>
-                                <option value="Chicago Deep-Fish, 100">Chicago Deep-Fish @ Ksh.100</option>
-                                <option value="Flat Bread/Focaccia, 100">Flat Bread/Focaccia @ Ksh.100</option>
-                                <option value="11" disabled>Custom Crusts...:</option>
-                                <option value="Glutten-Free, 100">Glutten-Free @ Ksh.100</option>
-                                <option value="Vegan-Friendly, 100">Vegan-Friendly @ Ksh.100</option>
+                                <option muted>Thin, Thick or Custom Crusts...</option>
+                                <!-- for small pizza -->
+                                <option class="sml" value="1" disabled>Thin Crusts...:</option>
+                                <option class="sml" value="New Haven Style, 100">New Haven Style @ Ksh.100</option>
+                                <option class="sml" value="St. Louis Style, 100">St. Louis Style @ Ksh.100</option>
+                                <option class="sml" value="Neapolitan, 100">Neapolitan @ Ksh.100</option>
+                                <option class="sml" value="New York Style, 100">New York Style @ Ksh.100</option>
+                                <option class="sml" value="6" disabled>Thick Crusts...:</option>
+                                <option class="sml" value="Double/Stuffed-Crust Style, 100">Double/Stuffed-Crust Style @ Ksh.100</option>
+                                <option class="sml" value="Detroit/Sicilian Style, 100">Detroit/Sicilian Style @ Ksh.100</option>
+                                <option class="sml" value="Chicago Deep-Fish, 100">Chicago Deep-Fish @ Ksh.100</option>
+                                <option class="sml" value="Flat Bread/Focaccia, 100">Flat Bread/Focaccia @ Ksh.100</option>
+                                <option class="sml" value="11" disabled>Custom Crusts...:</option>
+                                <option class="sml" value="Glutten-Free, 100">Glutten-Free @ Ksh.100</option>
+                                <option class="sml" value="Vegan-Friendly, 100">Vegan-Friendly @ Ksh.100</option>
+
+                                <!-- for medium pizza -->
+                                <option class="mdms" value="1" disabled>Thin Crusts...:</option>
+                                <option class="mdms" value="New Haven Style, 200">New Haven Style @ Ksh.200</option>
+                                <option class="mdms" value="St. Louis Style, 200">St. Louis Style @ Ksh.200</option>
+                                <option class="mdms" value="Neapolitan, 200">Neapolitan @ Ksh.200</option>
+                                <option class="mdms" value="New York Style, 200">New York Style @ Ksh.200</option>
+                                <option class="mdms" value="6" disabled>Thick Crusts...:</option>
+                                <option class="mdms" value="Double/Stuffed-Crust Style, 200">Double/Stuffed-Crust Style @ Ksh.200</option>
+                                <option class="mdms" value="Detroit/Sicilian Style, 200">Detroit/Sicilian Style @ Ksh.200</option>
+                                <option class="mdms" value="Chicago Deep-Fish, 200">Chicago Deep-Fish @ Ksh.200</option>
+                                <option class="mdms" value="Flat Bread/Focaccia, 200">Flat Bread/Focaccia @ Ksh.200</option>
+                                <option class="mdms" value="11" disabled>Custom Crusts...:</option>
+                                <option class="mdms" value="Glutten-Free, 200">Glutten-Free @ Ksh.200</option>
+                                <option class="mdms" value="Vegan-Friendly, 200">Vegan-Friendly @ Ksh.200</option>
+
+                                <!-- for large pizza -->
+                                <option class="lrg" value="1" disabled>Thin Crusts...:</option>
+                                <option class="lrg" value="New Haven Style, 300">New Haven Style @ Ksh.300</option>
+                                <option class="lrg" value="St. Louis Style, 300">St. Louis Style @ Ksh.300</option>
+                                <option class="lrg" value="Neapolitan, 300">Neapolitan @ Ksh.300</option>
+                                <option class="lrg" value="New York Style, 300">New York Style @ Ksh.300</option>
+                                <option class="lrg" value="6" disabled>Thick Crusts...:</option>
+                                <option class="lrg" value="Double/Stuffed-Crust Style, 300">Double/Stuffed-Crust Style @ Ksh.300</option>
+                                <option class="lrg" value="Detroit/Sicilian Style, 300">Detroit/Sicilian Style @ Ksh.300</option>
+                                <option class="lrg" value="Chicago Deep-Fish, 300">Chicago Deep-Fish @ Ksh.300</option>
+                                <option class="lrg" value="Flat Bread/Focaccia, 300">Flat Bread/Focaccia @ Ksh.300</option>
+                                <option class="lrg" value="11" disabled>Custom Crusts...:</option>
+                                <option class="lrg" value="Glutten-Free, 300">Glutten-Free @ Ksh.300</option>
+                                <option class="lrg" value="Vegan-Friendly, 300">Vegan-Friendly @ Ksh.300</option>
                             </select>
                         </div>
 
                         <!-- fields for Toppings -->
                         <div class="" style="width: 50%;">
-                            <!-- <div class="input-group-prepend">
-                                <label class="input-group-text" for="inputGroupSelect03" style="background-color: #6d391e; color: white;">Choose Toppings</label>
-                            </div> -->
+                            <!--  -->
                             <h4>Toppings</h4>
-                            <input type="checkbox" name="topping" value="Pepperoni, 100"> <strong>Pepperoni @ Ksh.100</strong><br>
-                            <input type="checkbox" name="topping" value="Mushroooms, 100"> <strong>Mushroooms @ Ksh.100</strong><br>
-                            <input type="checkbox" name="topping" value="Onions, 100"> <strong>Onions @ Ksh.100</strong><br>
-                            <input type="checkbox" name="topping" value="Sausage, 100"> <strong>Sausage @ Ksh.100</strong><br>
-                            <input type="checkbox" name="topping" value="Bacon, 100"> <strong>Bacon @ Ksh.100</strong><br>
-                            <input type="checkbox" name="topping" value="Extra Cheese, 100"> <strong>Extra Cheese @ Ksh.10</strong>0<br>
-                            <input type="checkbox" name="topping" value="Black Olives, 100"> <strong>Black Olives @ Ksh.100</strong><br>
-                            <input type="checkbox" name="topping" value="Green, 100"> <strong>Green Pepper @ Ksh.100</strong><br>
-                            <input type="checkbox" name="topping" value="Pineapple, 100"> <strong>Pineapple @ Ksh.100</strong><br>
-                            <input type="checkbox" name="topping" value="Spinach, 100"> <strong>Spinach @ Ksh.100</strong>
+                            <div class="none">
+                                <strong>Pepperoni</strong><br>
+                                <strong>Mushroooms</strong><br>
+                                <strong>Onions</strong><br>
+                                <strong>Sausage</strong><br>
+                                <strong>Bacon</strong><br>
+                                <strong>Extra Cheese</strong><br>
+                                <strong>Black Olives</strong><br>
+                                <strong>Green Pepper</strong><br>
+                                <strong>Pineapple</strong><br>
+                                <strong>Spinach</strong>   
+                            </div>
+                            <!-- for small Pizza -->
+                            <div class="sml">
+                                <input type="checkbox" name="topping" value="Pepperoni, 100"> <strong>Pepperoni @ Ksh.100</strong><br>
+                                <input type="checkbox" name="topping" value="Mushroooms, 100"> <strong>Mushroooms @ Ksh.100</strong><br>
+                                <input type="checkbox" name="topping" value="Onions, 100"> <strong>Onions @ Ksh.100</strong><br>
+                                <input type="checkbox" name="topping" value="Sausage, 100"> <strong>Sausage @ Ksh.100</strong><br>
+                                <input type="checkbox" name="topping" value="Bacon, 100"> <strong>Bacon @ Ksh.100</strong><br>
+                                <input type="checkbox" name="topping" value="Extra Cheese, 100"> <strong>Extra Cheese @ Ksh.100</strong><br>
+                                <input type="checkbox" name="topping" value="Black Olives, 100"> <strong>Black Olives @ Ksh.100</strong><br>
+                                <input type="checkbox" name="topping" value="Green, 100"> <strong>Green Pepper @ Ksh.100</strong><br>
+                                <input type="checkbox" name="topping" value="Pineapple, 100"> <strong>Pineapple @ Ksh.100</strong><br>
+                                <input type="checkbox" name="topping" value="Spinach, 100"> <strong>Spinach @ Ksh.100</strong>
+                            </div>
+
+                            <!-- for medium Pizza -->
+                            <div class="mdms">
+                                <input type="checkbox" name="topping" value="Pepperoni, 200"> <strong>Pepperoni @ Ksh.200</strong><br>
+                                <input type="checkbox" name="topping" value="Mushroooms, 200"> <strong>Mushroooms @ Ksh.200</strong><br>
+                                <input type="checkbox" name="topping" value="Onions, 200"> <strong>Onions @ Ksh.200</strong><br>
+                                <input type="checkbox" name="topping" value="Sausage, 200"> <strong>Sausage @ Ksh.200</strong><br>
+                                <input type="checkbox" name="topping" value="Bacon, 200"> <strong>Bacon @ Ksh.200</strong><br>
+                                <input type="checkbox" name="topping" value="Extra Cheese, 200"> <strong>Extra Cheese @ Ksh.200</strong><br>
+                                <input type="checkbox" name="topping" value="Black Olives, 200"> <strong>Black Olives @ Ksh.200</strong><br>
+                                <input type="checkbox" name="topping" value="Green, 200"> <strong>Green Pepper @ Ksh.200</strong><br>
+                                <input type="checkbox" name="topping" value="Pineapple, 200"> <strong>Pineapple @ Ksh.200</strong><br>
+                                <input type="checkbox" name="topping" value="Spinach, 200"> <strong>Spinach @ Ksh.200</strong>
+                            </div>
+
+                            <!-- for large Pizza -->
+                            <div class="lrg">
+                                <input type="checkbox" name="topping" value="Pepperoni, 300"> <strong>Pepperoni @ Ksh.300</strong><br>
+                                <input type="checkbox" name="topping" value="Mushroooms, 300"> <strong>Mushroooms @ Ksh.300</strong><br>
+                                <input type="checkbox" name="topping" value="Onions, 300"> <strong>Onions @ Ksh.300</strong><br>
+                                <input type="checkbox" name="topping" value="Sausage, 300"> <strong>Sausage @ Ksh.300</strong><br>
+                                <input type="checkbox" name="topping" value="Bacon, 300"> <strong>Bacon @ Ksh.300</strong><br>
+                                <input type="checkbox" name="topping" value="Extra Cheese, 300"> <strong>Extra Cheese @ Ksh.300</strong><br>
+                                <input type="checkbox" name="topping" value="Black Olives, 300"> <strong>Black Olives @ Ksh.300</strong><br>
+                                <input type="checkbox" name="topping" value="Green, 300"> <strong>Green Pepper @ Ksh.300</strong><br>
+                                <input type="checkbox" name="topping" value="Pineapple, 300"> <strong>Pineapple @ Ksh.300</strong><br>
+                                <input type="checkbox" name="topping" value="Spinach, 300"> <strong>Spinach @ Ksh.300</strong>
+                            </div>
                         </div>
                         <!--  -->
                         <div class="row" id="person">
@@ -116,6 +188,7 @@
                             </div>
                         </div>
                         <button type="submit" class="btn btn-danger" id="sub" data-toggle="modal" data-target="#exampleModalCenter">SUBMIT</button>
+                        <!-- <button type="submit" class="btn btn-danger" id="sub">SUBMIT</button> -->
                         <!-- <button type="button" class="btn btn-danger" id="addorder">ADD ORDER</button> -->
                     </form>
                 </fieldset>
@@ -150,7 +223,7 @@
                                 <strong>Floor/Door No.:</strong>&nbsp;<span id="new-floor"></span><br>
 
                                 <p>+ KSh. 200 <em>(Delivery Fees)</em></p>
-                                <p>Your Delivery be at your door steps in 20 mins</p>
+                                <p>Your Delivery will be at your door step in 20 mins</p>
                             </div>
                         </div>
                         <div class="totals">

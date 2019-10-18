@@ -17,6 +17,45 @@ function Address(street,estate,apartment,floor){
     this.Floor = floor;
 };
 
+
+// ON SIZE SELECTION
+var siz;
+$('#inputGroupSelect01').click(function(){
+    siz = $("select#inputGroupSelect01").val().split(", ")[0];
+    console.log(siz);
+
+    if(siz == "Small"){
+        $('.none').hide();
+
+        $('.sml').show();
+        $('.mdms').hide();
+        $('.lrg').hide();
+
+        
+    }else if(siz == "Medium"){
+        $('.none').hide();
+
+        $('.sml').hide();
+        $('.mdms').show();
+        $('.lrg').hide();
+
+    }else if(siz == "Large"){
+        $('.none').hide();
+
+        $('.sml').hide();
+        $('.mdms').hide();
+        $('.lrg').show();
+
+    }else{
+      alert("What Pizza size would you like...!?");  
+    };
+
+
+});
+
+
+
+
 $("#orders").click(function(){
     alert("Our Delivery fee is KSh.200");
     $(".addr").show();
@@ -27,12 +66,16 @@ $("#orders").click(function(){
 $("form#new-order").submit(function(event) {
     event.preventDefault();
 
+
+
     // the data from the form
     var name = $("input#name").val();
     var phoneNo = $("input#phone").val();
 
     var crust = $("select#inputGroupSelect02").val();
+    console.log(crust);
     var size = $("select#inputGroupSelect01").val();
+    console.log(size);
     var top = [];
     $.each($("input[name='topping']:checked"), function(){
         top.push($(this).val());
@@ -71,6 +114,7 @@ $("form#new-order").submit(function(event) {
     resetFields();
 
 });
+
 
 
 // CALCULATION FUNCTION
@@ -137,8 +181,8 @@ function displayData(newOrder){
     var toppngsPrc;
 
     var tops = newOrder.Toppings;
+    
     tops.forEach(function(topps) {
-       
         toppngs = topps.split(", ")[0];
         toppngsPrc = topps.split(", ")[1]; 
         // displaying the list of arrays
